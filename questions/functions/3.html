@@ -1,0 +1,50 @@
+<!-- Write a JavaScript function that generates all combinations of a string -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>generates all combinations of a string</title>
+</head>
+
+<body>
+    <script>
+        // function combinator(s) {
+        //     list_of_strings = new Array();
+        //     for (i = 0; i < s.length; i++) {
+        //         for (j = i + 1; j < s.length + 1; j++) {
+        //             list_of_strings.push(s.slice(i, j));
+        //         }
+        //     }
+        //     return list_of_strings;
+        // }
+
+        // console.log(combinator(prompt("Enter the word")));
+
+
+
+        function combString(str) {
+            var lenStr = str.length;
+            var result = [];
+            var indexCurrent = 0;
+
+            while (indexCurrent < lenStr) {
+                var char = str.charAt(indexCurrent);
+                var x;
+                var arrTemp = [char];
+
+                for (x in result) {
+                    arrTemp.push("" + result[x] + char);
+                }
+                result = result.concat(arrTemp);
+
+                indexCurrent++;
+            }
+
+            return result;
+        }
+
+        console.log(combString("vibhav"));
+    </script>
+</body>
+
+</html>

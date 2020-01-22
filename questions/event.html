@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>event in javascript</h1>
+        <p id="exam"></p>
+        <button onclick="document.getElementById('exam').innerHTML=Date()">click me </button></br>
+        <button onclick="this.innerHTML=Date()">click me </button></br></br></br></br></br>
+        <button onclick="display()"> display me</button>
+        <script>
+            function display() {
+                document.getElementById("exam2").innerHTML=Date();
+            }
+        </script>
+        <p id="exam2"></p>
+
+    </body>
+</html>

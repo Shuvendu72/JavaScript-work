@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to calculate the factorial of a number -->
+<!doctype html>
+<html>
+<title>factorial of a number</title>
+
+<head>
+</head>
+
+<body>
+    <script>
+        function fact(x) {
+            if (x == 0) {
+                return 1;
+            }
+            if (x < 0) {
+                return undefined;
+            }
+            for (var i = x; --i;) {
+                x = x * i;
+            }
+            return x;
+        }
+        console.log(fact(prompt("enter a number")));
+    </script>
+</body>
+
+</html>

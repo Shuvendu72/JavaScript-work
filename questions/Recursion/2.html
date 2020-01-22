@@ -1,0 +1,20 @@
+<!-- Write a JavaScript program to find the greatest common divisor (gcd) of two positive numbers -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GCD of two positive numbers</title>
+    </head>
+    <body>
+        <script>
+            function gcd(a, b) {
+                while((a % b) > 0) {
+                    var r = a % b;
+                    a = b;
+                    b = r;
+                }
+                return b;
+            }
+            console.log(gcd(prompt("enter  number"),prompt("enter  number")));
+        </script>
+    </body>
+</html>

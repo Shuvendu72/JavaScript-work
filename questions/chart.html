@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Style Get data from excel sheet
+    </title>
+    <script>
+        function GetData(cell, row) {
+            var excel = new ActiveXObject("Excel.Application");
+            var excel_file = excel.Workbooks.Open("html_test.xlsx");
+            var excel_sheet = excel.Worksheets("Sheet1");
+            var data = excel_sheet.Cells(cell, row).Value;
+            document.getElementById('div1').innerText = data;
+        }
+    </script>
+</head>
+<body>
+        <!-- <p>&nbsp;</p> -->
+        <div id="div1"></div>
+        <input type="button" value="cell(1),row(1)" onClick="GetData(1,4);">
+</body>
+</html>

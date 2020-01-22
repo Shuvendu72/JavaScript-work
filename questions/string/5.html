@@ -1,0 +1,19 @@
+<!-- Write a JavaScript function to convert a string in abbreviated form. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>abbreviated form</title>
+</head>
+<body>
+    <script>
+        abbre_form = str => {
+            var name = str.trim().split(" ");
+            if(name.length > 1) {
+                return name[0] + " " + name[1].charAt(0) + "." ;
+            }
+            return name[0];
+        };
+        console.log(abbre_form("shubham sharma"));
+    </script>
+</body>
+</html>

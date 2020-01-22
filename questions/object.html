@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>This is an object </h1>
+        <p id="exam"></p>
+        <!-- <script>
+            var car= "alto";
+        
+            document.getElementById("exam").innerHTML = car;
+        </script> -->
+        <script>
+            // var car;
+            //  car = {
+            //     type:"alto",
+            //     color:"black",
+            //     model:"100"
+            // };
+            //document.getElementById("exam").innerHTML = "the car type " + car.type +  "  model is " + car.model ;
+            //document.getElementById("exam").innerHTML = " the car type " + car["type"] + " model is "+ car["model"];
+                   // A method is a function stored as a property. 
+                             //  use of this function
+            var person = {
+                firstname: "Rohit",
+                lastname: "Singh",
+                id:"101",
+                fullname:function() {
+                    return this.firstname + " " + this.lastname;
+                }
+            };
+            document.getElementById("exam").innerHTML= person.fullname();                
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!-- Write a JavaScript function to extract a specified number of characters from a string -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        truncate_string = (str , length)=> {
+            if((str.constructor === String) && (length > 0)) {
+            return str.slice(0,length);
+        }
+        };
+        console.log(truncate_string("sgygdhdj", 4));
+    </script>
+</body>
+</html>

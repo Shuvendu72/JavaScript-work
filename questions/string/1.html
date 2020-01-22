@@ -1,0 +1,23 @@
+<!-- Write a JavaScript function to check whether an `input` is a string or not. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>input check</title>
+</head>
+
+<body>
+    <script>
+        is_string = input => {
+            if (Object.prototype.toString.call(input) === '[object String]')
+                return true;
+            else
+                return false;
+        };
+        console.log(is_string('abcd'));
+        console.log(is_string([1, 2, 4]));
+
+    </script>
+</body>
+
+</html>

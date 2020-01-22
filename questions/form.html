@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form name="myform" onsubmit="retrun myfunction()" method="POST" action="">
+             Name:- <input id="myname" type="text">
+            <input type ="button" value="Submit">
+      </form>
+      <script>
+          function myfunction(){
+              var x = document.forms["myform"] ["myname"].value;
+
+          }
+      </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>leap year</title>
+    </head>
+    <body>
+        <h1>Write a JavaScript program to determine whether a given 
+            year is a leap year in the Gregorian calendar.
+        </h1>
+        <script>
+            var year = 2021;
+            var x;
+            if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+                x = "leap year";
+            }
+            else {
+                x = "not leap year";
+            }
+            console.log(x);
+        </script>
+
+    </body>
+</html>

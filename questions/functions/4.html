@@ -1,0 +1,33 @@
+<!-- Write a JavaScript function that returns a passed string with letters in alphabetical order -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>alphabetical order</title>
+</head>
+
+<body>
+    <script>
+        function Alphabet(str) {
+            var arr = str.split(''),
+                alpha = arr.sort();
+            return alpha.join('');
+        }
+
+        console.log(Alphabet(prompt("enter strings")));
+
+        // function titleCase(str) {
+        //     str = str.toLowerCase().split(' ');
+
+        //     for (var i = 0; i < str.length; i++) {
+        //         str[i] = str[i].split('');
+        //         str[i][0] = str[i][0].toUpperCase();
+        //         str[i] = str[i].join('');
+        //     }
+        //     return str.join(' ');
+        // }
+        // titleCase("I'm a little tea pot");
+    </script>
+</body>
+
+</html>

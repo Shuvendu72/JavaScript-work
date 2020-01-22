@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1> Write a JavaScript program to find the area of a triangle where 
+            lengths of the three of its sides are 5, 6, 7.
+            Area = √ p(p−a)(p−b)(p−c)    
+            where p is half the perimeter, or   
+            (a+b+c)/2.
+        </h1>
+        <script>
+            var Area, p;
+            p = (5 + 6 + 7)/2;
+            Area = Math.sqrt(p * (p - 5) * (p - 6) * (p - 7));
+            console.log(Area);
+        </script>    
+    </body>
+</html>

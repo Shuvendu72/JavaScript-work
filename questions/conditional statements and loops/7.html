@@ -1,0 +1,22 @@
+<!-- Write a JavaScript program to find and print the first 5 happy numbers. -->
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 4;
+    var happyNum =function(n) {
+        var array = n.toString(). split('').map(n=> n*n);
+        var sum = array.reduce((a,b)=>a+b , 0);
+        if (sum == 1){
+            return true;
+        } else {
+            happyNum(sum);
+        }
+    }  
+    </script>
+</body>
+</html>
+<!-- NOT completed -->
